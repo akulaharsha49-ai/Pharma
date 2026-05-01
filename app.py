@@ -76,14 +76,14 @@ def greeting():
     col1, col2 = st.columns(2)
 
     with col1:
-        if st.button("👨‍⚕️ Doctor"):
-            st.session_state.role = "Doctor"
+        if st.button("👨‍⚕️pharmacist "):
+            st.session_state.role = "pharmacis"
             st.session_state.step = "main"  
 
     
 
     with col2:
-        if st.button("🧑‍💼 Admin"):
+        if st.button("🧑‍💻Admin"):
             st.session_state.role = "Admin"
             st.session_state.step = "main"
 
@@ -104,7 +104,7 @@ def main_menu():
 
 
 
-    if role == "Doctor":
+    if role == "pharmacis":
         col1, col2, col3 = st.columns(3)            
         with col1: 
             if st.button("💵New Bill"):
